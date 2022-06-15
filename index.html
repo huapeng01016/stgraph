@@ -1,0 +1,216 @@
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="stmarkdown.css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
+<h1><a href="#example-graphs-using-stcolor-scheme" id="example-graphs-using-stcolor-scheme">Example graphs using stcolor scheme</a></h1>
+<h2><a href="#scatter-plot" id="scatter-plot">scatter plot</a></h2>
+<pre><code>. sysuse auto, clear
+
+. sc mpg price, scheme(`scheme')
+
+</code></pre>
+<p><img src="e1.svg" ></p>
+<pre><code>. sc mpg price weight, scheme(`scheme')
+
+</code></pre>
+<p><img src="e2.svg" ></p>
+<pre><code>. sc mpg price || mband mpg price, scheme(`scheme')
+
+</code></pre>
+<p><img src="e3.svg" ></p>
+<pre><code>. sysuse sandstone, clear
+
+. sc depth northing if collection == 1 ||         /// 
+&gt;         sc depth northing if collection == 2, scheme(`scheme')
+
+</code></pre>
+<p><img src="e4.svg" ></p>
+<h2><a href="#line-plot" id="line-plot">line plot</a></h2>
+<pre><code>. sysuse uslifeexp, clear
+
+. line le_wfemale year || line le_bfemale year,   /// 
+&gt;         legend(label(1 &quot;White females&quot;)                         /// 
+&gt;         label(2 &quot;Black females&quot;))                                       /// 
+&gt;         title(&quot;Life expectancy&quot;)                                        /// 
+&gt;         note(&quot;U.S. life expectancy for females, 1900-1999&quot;)     /// 
+&gt;         scheme(`scheme')
+
+</code></pre>
+<p><img src="e5.svg" ></p>
+<pre><code>. sysuse nlsw88, clear
+
+. gen divorced = married == 0 &amp; never_married == 0 if !missing(married, never_ma
+&gt; rried)
+
+. collapse (mean) married never_married divorced, by(age)
+
+. replace married = married*100
+
+. replace never_married = never_married*100
+
+. replace divorced = divorced*100
+
+. label var married &quot;married&quot;
+
+. label var never_married &quot;never married&quot;
+
+. label var divorced &quot;divorced or widowed&quot;
+
+. twoway line married never_married divorced age
+
+</code></pre>
+<p><img src="e6.svg" ></p>
+<h2><a href="#bar" id="bar">bar</a></h2>
+<pre><code>. sysuse sp500, clear
+
+. twoway bar open date in 1/50, scheme(`scheme')
+
+</code></pre>
+<p><img src="e7.svg" ></p>
+<pre><code>. use https://www.stata-press.com/data/r18/nlsw88, clear
+
+. graph bar wage, over(smsa) over(married) over(collgrad) scheme(`scheme')
+
+</code></pre>
+<p><img src="e8.svg" ></p>
+<pre><code>. use https://stats.oarc.ucla.edu/stat/stata/notes/hsb2.dta, clear
+
+. collapse (mean) meanwrite= write (sd) sdwrite=write (count) n=write, by(race s
+&gt; es)
+
+. generate hiwrite = meanwrite + invttail(n-1,0.025)*(sdwrite / sqrt(n))
+
+. generate lowrite = meanwrite - invttail(n-1,0.025)*(sdwrite / sqrt(n))
+
+. graph bar meanwrite, over(race) over(ses) asyvars scheme(`scheme')
+
+</code></pre>
+<p><img src="e9.svg" ></p>
+<pre><code>. sysuse pop2000, clear
+
+. list agegrp maletotal femtotal
+
+. replace maletotal = -maletotal/1e+6
+
+. replace femtotal = femtotal/1e+6
+
+. twoway bar maletotal agegrp, horizontal xvarlab(Males)          /// 
+&gt;         || bar  femtotal agegrp, horizontal xvarlab(Females)    ///
+&gt;     || , ylabel(1(1)17, angle(horizontal) valuelabel labsize(*.8))      ///
+&gt;          xtitle(&quot;Population in millions&quot;) ytitle(&quot;&quot;)    ///
+&gt;          xlabel(-10 &quot;10&quot; -7.5 &quot;7.5&quot; -5 &quot;5&quot; -2.5 &quot;2.5&quot; 2.5 5 7.5 10)     ///
+&gt;          legend(label(1 Males) label(2 Females))        ///
+&gt;          title(&quot;US Male and Female Population by Age&quot;)  ///
+&gt;          subtitle(&quot;Year 2000&quot;)  ///
+&gt;          note(&quot;Source: U.S. Census Bureau, Census 2000, Tables 1, 2 and 3&quot;, sp
+&gt; an)       ///
+&gt;                  scheme(`scheme')
+
+</code></pre>
+<p><img src="ea.svg" ></p>
+<pre><code>. sysuse nlsw88, clear
+
+. graph bar wage if occ&lt;9, over(occ) asyvars over(union) scheme(`scheme')
+
+</code></pre>
+<p><img src="ea1.svg" ></p>
+<h2><a href="#box-plot" id="box-plot">box plot</a></h2>
+<pre><code>. use https://www.stata-press.com/data/r17/bplong, clear
+
+. graph box bp, over(when) over(sex)              ///
+&gt;         ytitle(&quot;Systolic blood pressure&quot;)       ///
+&gt;         title(&quot;Response to Treatment, by Sex&quot;)          ///
+&gt;         subtitle(&quot;(120 Preoperative Patients)&quot; &quot; &quot;)     ///
+&gt;         note(&quot;Source: Fictional Drug Trial, StataCorp, 2003&quot;)   ///
+&gt;         scheme(`scheme')
+
+</code></pre>
+<p><img src="eb.svg" ></p>
+<pre><code>. use https://www.stata-press.com/data/r17/bpwide, clear
+
+. graph box bp_before bp_after, over(sex) scheme(`scheme')
+
+</code></pre>
+<p><img src="ec.svg" ></p>
+<h2><a href="#more-scatter-plot" id="more-scatter-plot">more scatter plot</a></h2>
+<pre><code>. sysuse auto, clear
+
+. sc mpg price || mband mpg price, xline(1500) yline(25) scheme(`scheme')
+
+</code></pre>
+<p><img src="ed.svg" ></p>
+<pre><code>. sysuse sandstone, clear
+
+. sc depth northing if collection == 1 ||         /// 
+&gt;         sc depth northing if collection == 2, xline(75000) yline(7820) scheme(
+&gt; `scheme')
+
+</code></pre>
+<p><img src="ee.svg" ></p>
+<h2><a href="#ci-plot" id="ci-plot">CI plot</a></h2>
+<pre><code>. sysuse auto, clear
+
+. twoway lfitci mpg weight || scatter mpg weight, scheme(`scheme')
+
+</code></pre>
+<p><img src="ef.svg" ></p>
+<pre><code>. clear
+
+. infile str14 country setting effort change using https://data.princeton.edu/ww
+&gt; s509/datasets/effort.raw, clear
+
+. gen pos=3
+
+. replace pos = 11 if country == &quot;TrinidadTobago&quot;
+
+. replace pos = 9 if country == &quot;CostaRica&quot;
+
+. replace pos = 2 if country == &quot;Panama&quot; | country == &quot;Nicaragua&quot;
+
+. 
+. graph twoway (lfitci change setting) ///
+&gt;           (scatter change setting, mlabel(country) mlabv(pos) ) ///
+&gt;         , title(&quot;Fertility Decline by Social Setting&quot;) ///
+&gt;           ytitle(&quot;Fertility Decline&quot;) ///
+&gt;           legend(ring(0) pos(5) order(2 &quot;linear fit&quot; 1 &quot;95% CI&quot;))             
+&gt;     
+
+</code></pre>
+<p><img src="eg.svg" ></p>
+<h2><a href="#marginsplot" id="marginsplot">marginsplot</a></h2>
+<pre><code>. clear
+
+. webuse nhanes2, clear
+
+. qui {
+
+. marginsplot, scheme(`scheme')
+
+</code></pre>
+<p><img src="eh.svg" ></p>
+<h2><a href="#histogram" id="histogram">histogram</a></h2>
+<pre><code>. sysuse auto, clear
+
+. histogram mpg, discrete by(foreign) scheme(`scheme')
+
+</code></pre>
+<p><img src="ei.svg" ></p>
+<pre><code>. sysuse auto, clear
+
+. histogram mpg, discrete by(foreign) scheme(`scheme')
+
+</code></pre>
+<p><img src="ei.svg" ></p>
+<pre><code>. sysuse voter, clear
+
+. histogram candi [freq=pop], discrete fraction   /// 
+&gt;         by(inc, total) gap(40) xlabel(2 3 4, valuelabel) scheme(`scheme')
+
+</code></pre>
+<p><img src="ej.svg" ></p>
