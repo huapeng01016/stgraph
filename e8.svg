@@ -168,22 +168,22 @@
 	<line x1="4087.63" y1="226.80" x2="4152.43" y2="226.80" style="stroke:#EAF2F3;stroke-width:9.72"/>
 	<line x1="4184.83" y1="226.80" x2="4249.63" y2="226.80" style="stroke:#EAF2F3;stroke-width:9.72"/>
 	<line x1="4282.03" y1="226.80" x2="4346.83" y2="226.80" style="stroke:#EAF2F3;stroke-width:9.72"/>
-	<rect x="666.90" y="1825.71" width="311.51" height="929.64" style="fill:#0062D8"/>
-	<rect x="670.14" y="1828.95" width="305.03" height="923.16" style="fill:none;stroke:#0062D8;stroke-width:6.48"/>
-	<rect x="978.41" y="1453.95" width="311.68" height="1301.40" style="fill:#D6002E"/>
-	<rect x="981.65" y="1457.19" width="305.20" height="1294.92" style="fill:none;stroke:#D6002E;stroke-width:6.48"/>
-	<rect x="1498.84" y="1767.15" width="311.51" height="988.20" style="fill:#0062D8"/>
-	<rect x="1502.08" y="1770.39" width="305.03" height="981.72" style="fill:none;stroke:#0062D8;stroke-width:6.48"/>
-	<rect x="1810.35" y="1525.33" width="311.51" height="1230.02" style="fill:#D6002E"/>
-	<rect x="1813.59" y="1528.57" width="305.03" height="1223.54" style="fill:none;stroke:#D6002E;stroke-width:6.48"/>
-	<rect x="2745.06" y="1250.94" width="311.51" height="1504.41" style="fill:#0062D8"/>
-	<rect x="2748.30" y="1254.18" width="305.03" height="1497.93" style="fill:none;stroke:#0062D8;stroke-width:6.48"/>
-	<rect x="3056.57" y="761.40" width="311.51" height="1993.95" style="fill:#D6002E"/>
-	<rect x="3059.81" y="764.64" width="305.03" height="1987.47" style="fill:none;stroke:#D6002E;stroke-width:6.48"/>
-	<rect x="3576.83" y="1384.09" width="311.68" height="1371.26" style="fill:#0062D8"/>
-	<rect x="3580.06" y="1387.33" width="305.20" height="1364.78" style="fill:none;stroke:#0062D8;stroke-width:6.48"/>
-	<rect x="3888.51" y="950.40" width="311.51" height="1804.95" style="fill:#D6002E"/>
-	<rect x="3891.75" y="953.64" width="305.03" height="1798.47" style="fill:none;stroke:#D6002E;stroke-width:6.48"/>
+	<rect x="666.90" y="1825.71" width="311.51" height="929.64" style="fill:#1A85FF"/>
+	<rect x="670.14" y="1828.95" width="305.03" height="923.16" style="fill:none;stroke:#1A85FF;stroke-width:6.48"/>
+	<rect x="978.41" y="1453.95" width="311.68" height="1301.40" style="fill:#D41159"/>
+	<rect x="981.65" y="1457.19" width="305.20" height="1294.92" style="fill:none;stroke:#D41159;stroke-width:6.48"/>
+	<rect x="1498.84" y="1767.15" width="311.51" height="988.20" style="fill:#1A85FF"/>
+	<rect x="1502.08" y="1770.39" width="305.03" height="981.72" style="fill:none;stroke:#1A85FF;stroke-width:6.48"/>
+	<rect x="1810.35" y="1525.33" width="311.51" height="1230.02" style="fill:#D41159"/>
+	<rect x="1813.59" y="1528.57" width="305.03" height="1223.54" style="fill:none;stroke:#D41159;stroke-width:6.48"/>
+	<rect x="2745.06" y="1250.94" width="311.51" height="1504.41" style="fill:#1A85FF"/>
+	<rect x="2748.30" y="1254.18" width="305.03" height="1497.93" style="fill:none;stroke:#1A85FF;stroke-width:6.48"/>
+	<rect x="3056.57" y="761.40" width="311.51" height="1993.95" style="fill:#D41159"/>
+	<rect x="3059.81" y="764.64" width="305.03" height="1987.47" style="fill:none;stroke:#D41159;stroke-width:6.48"/>
+	<rect x="3576.83" y="1384.09" width="311.68" height="1371.26" style="fill:#1A85FF"/>
+	<rect x="3580.06" y="1387.33" width="305.20" height="1364.78" style="fill:none;stroke:#1A85FF;stroke-width:6.48"/>
+	<rect x="3888.51" y="950.40" width="311.51" height="1804.95" style="fill:#D41159"/>
+	<rect x="3891.75" y="953.64" width="305.03" height="1798.47" style="fill:none;stroke:#D41159;stroke-width:6.48"/>
 	<line x1="491.23" y1="2755.35" x2="491.23" y2="113.40" style="stroke:#000000;stroke-width:6.48"/>
 	<line x1="491.23" y1="2755.35" x2="446.18" y2="2755.35" style="stroke:#000000;stroke-width:6.48"/>
 	<text x="423.73" y="2794.79" style="font-family:'Helvetica';font-size:112.56px;fill:#000000" text-anchor="end">0</text>
@@ -203,10 +203,10 @@
 	<text x="3888.51" y="2879.11" style="font-family:'Helvetica';font-size:112.56px;fill:#000000" text-anchor="middle">Married</text>
 	<rect x="4414.67" y="1250.78" width="833.12" height="367.20" style="fill:#FFFFFF"/>
 	<rect x="4417.91" y="1254.02" width="826.64" height="360.72" style="fill:none;stroke:#FFFFFF;stroke-width:6.48"/>
-	<rect x="4463.27" y="1299.38" width="123.69" height="112.56" style="fill:#0062D8"/>
-	<rect x="4466.51" y="1302.62" width="117.21" height="106.08" style="fill:none;stroke:#0062D8;stroke-width:6.48"/>
-	<rect x="4463.27" y="1456.82" width="123.69" height="112.56" style="fill:#D6002E"/>
-	<rect x="4466.51" y="1460.06" width="117.21" height="106.08" style="fill:none;stroke:#D6002E;stroke-width:6.48"/>
+	<rect x="4463.27" y="1299.38" width="123.69" height="112.56" style="fill:#1A85FF"/>
+	<rect x="4466.51" y="1302.62" width="117.21" height="106.08" style="fill:none;stroke:#1A85FF;stroke-width:6.48"/>
+	<rect x="4463.27" y="1456.82" width="123.69" height="112.56" style="fill:#D41159"/>
+	<rect x="4466.51" y="1460.06" width="117.21" height="106.08" style="fill:none;stroke:#D41159;stroke-width:6.48"/>
 	<text x="4654.46" y="1395.01" style="font-family:'Helvetica';font-size:112.56px;fill:#000000">Not SMSA</text>
 	<text x="4654.46" y="1552.62" style="font-family:'Helvetica';font-size:112.56px;fill:#000000">SMSA</text>
 </svg>

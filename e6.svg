@@ -308,9 +308,9 @@
 	<line x1="3516.41" y1="370.41" x2="3516.41" y2="305.61" style="stroke:#EAF2F3;stroke-width:9.72"/>
 	<line x1="3516.41" y1="273.21" x2="3516.41" y2="208.41" style="stroke:#EAF2F3;stroke-width:9.72"/>
 	<line x1="3516.41" y1="176.01" x2="3516.41" y2="113.40" style="stroke:#EAF2F3;stroke-width:9.72"/>
-	<path d=" M515.53 1144.97 L788.40 996.97 L1061.10 1105.48 L1333.97 1100.76 L1606.67 1114.26 L1879.54 1087.26 L2152.41 1065.49 L2425.11 1136.03 L2697.98 1186.65 L2970.84 1125.39 L3243.54 1027.69 L3516.41 1130.79 L3789.11 2729.19" stroke-linejoin="round" style="fill:none;stroke:#0062D8;stroke-width:9.72"/>
-	<path d=" M515.53 2393.04 L788.40 2406.21 L1061.10 2362.84 L1333.97 2423.76 L1606.67 2415.49 L1879.54 2555.21 L2152.41 2435.57 L2425.11 2591.66 L2697.98 2395.24 L2970.84 2513.19 L3243.54 2541.88 L3516.41 2598.75 L3789.11 2729.19" stroke-linejoin="round" style="fill:none;stroke:#D6002E;stroke-width:9.72"/>
-	<path d=" M515.53 2104.99 L788.40 2239.82 L1061.10 2174.68 L1333.97 2118.49 L1606.67 2113.43 L1879.54 2000.70 L2152.41 2141.94 L2425.11 1915.48 L2697.98 2061.28 L2970.84 2004.41 L3243.54 2073.60 L3516.41 1913.63 L3789.11 184.78" stroke-linejoin="round" style="fill:none;stroke:#00AF79;stroke-width:9.72"/>
+	<path d=" M515.53 1144.97 L788.40 996.97 L1061.10 1105.48 L1333.97 1100.76 L1606.67 1114.26 L1879.54 1087.26 L2152.41 1065.49 L2425.11 1136.03 L2697.98 1186.65 L2970.84 1125.39 L3243.54 1027.69 L3516.41 1130.79 L3789.11 2729.19" stroke-linejoin="round" style="fill:none;stroke:#1A85FF;stroke-width:9.72"/>
+	<path d=" M515.53 2393.04 L788.40 2406.21 L1061.10 2362.84 L1333.97 2423.76 L1606.67 2415.49 L1879.54 2555.21 L2152.41 2435.57 L2425.11 2591.66 L2697.98 2395.24 L2970.84 2513.19 L3243.54 2541.88 L3516.41 2598.75 L3789.11 2729.19" stroke-linejoin="round" style="fill:none;stroke:#D41159;stroke-width:9.72"/>
+	<path d=" M515.53 2104.99 L788.40 2239.82 L1061.10 2174.68 L1333.97 2118.49 L1606.67 2113.43 L1879.54 2000.70 L2152.41 2141.94 L2425.11 1915.48 L2697.98 2061.28 L2970.84 2004.41 L3243.54 2073.60 L3516.41 1913.63 L3789.11 184.78" stroke-linejoin="round" style="fill:none;stroke:#00BF7F;stroke-width:9.72"/>
 	<line x1="444.32" y1="2800.41" x2="444.32" y2="113.40" style="stroke:#000000;stroke-width:6.48"/>
 	<line x1="444.32" y1="2729.03" x2="399.26" y2="2729.03" style="stroke:#000000;stroke-width:6.48"/>
 	<text x="376.82" y="2768.46" style="font-family:'Helvetica';font-size:112.56px;fill:#000000" text-anchor="end">0</text>
@@ -334,9 +334,9 @@
 	<text x="2152.41" y="3070.31" style="font-family:'Helvetica';font-size:112.56px;fill:#000000" text-anchor="middle">Age in current year</text>
 	<rect x="3899.48" y="1194.58" width="1348.31" height="524.64" style="fill:#FFFFFF"/>
 	<rect x="3902.71" y="1197.82" width="1341.83" height="518.16" style="fill:none;stroke:#FFFFFF;stroke-width:6.48"/>
-	<line x1="3948.08" y1="1299.38" x2="4071.77" y2="1299.38" style="stroke:#0062D8;stroke-width:9.72"/>
-	<line x1="3948.08" y1="1456.82" x2="4071.77" y2="1456.82" style="stroke:#D6002E;stroke-width:9.72"/>
-	<line x1="3948.08" y1="1614.43" x2="4071.77" y2="1614.43" style="stroke:#00AF79;stroke-width:9.72"/>
+	<line x1="3948.08" y1="1299.38" x2="4071.77" y2="1299.38" style="stroke:#1A85FF;stroke-width:9.72"/>
+	<line x1="3948.08" y1="1456.82" x2="4071.77" y2="1456.82" style="stroke:#D41159;stroke-width:9.72"/>
+	<line x1="3948.08" y1="1614.43" x2="4071.77" y2="1614.43" style="stroke:#00BF7F;stroke-width:9.72"/>
 	<text x="4139.27" y="1338.81" style="font-family:'Helvetica';font-size:112.56px;fill:#000000">married</text>
 	<text x="4139.27" y="1496.26" style="font-family:'Helvetica';font-size:112.56px;fill:#000000">never married</text>
 	<text x="4139.27" y="1653.87" style="font-family:'Helvetica';font-size:112.56px;fill:#000000">divorced or widowed</text>
